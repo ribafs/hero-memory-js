@@ -1,0 +1,43 @@
+.footer {
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  p {
+    @include font(p2);
+    line-height: 1.5;
+    @include d(t) {
+      @include font(p2);
+    }
+    @include d(m) {
+      @include font(p1);
+    }
+  }
+  span {
+    color: $fonteDesabilitada;
+    @include font(p1);
+    line-height: 1.5;
+    @include d(t) {
+      @include font(p0);
+    }
+    @include d(m) {
+      @include font(p0);
+    }
+  }
+
+  img {
+    width: 40px;
+    @include d(t) {
+      width: 30px;
+    }
+    @include d(m) {
+      width: 25px;
+    }
+  }
+}
